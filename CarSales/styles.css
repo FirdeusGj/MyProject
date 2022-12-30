@@ -255,9 +255,6 @@ button:hover{
 .footer__links{
     margin-top: 15px;
 }
-.BeforeScroll{
-
-}
 .footer__link{
     margin: 0 10px;
     color: #ddd;
@@ -379,7 +376,7 @@ button:hover{
         height:200px;
     }
 }
-@media (max-width: 1300px){
+@media (max-width: 1500px){
     .cheap__cars{
         align-items: center;
         justify-content: center;
