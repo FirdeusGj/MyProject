@@ -379,7 +379,7 @@ button:hover{
         height:200px;
     }
 }
-@media (max-width: 1280px){
+@media (max-width: 1300px){
     .cheap__cars{
         align-items: center;
         justify-content: center;
