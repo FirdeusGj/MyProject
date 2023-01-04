@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             </div>
             <div>
                 <ul class="nav__links">
-                    <li><a href="#" class="nav__link">Donate</a></li>
+                    <li><a href="#donate" class="nav__link">Donate</a></li>
                     <li><a href="#" class="nav__link">About</a></li>
                 </ul>
             </div>
@@ -28,7 +28,9 @@
         <section class="main">
             <div class="background__img">
                 <div class="main__text">
-                    <button class="main__button">Help those in need</button>
+                    <a href="#donation">
+                        <button class="main__button">Help those in need</button>
+                    </a>
                 </div>
             </div>
             <div class="main__linear--gradient"></div>
@@ -36,7 +38,7 @@
     </main>
     <section id="donation">
         <div class="donation__wrapper">
-            <h1 class="donation__title">No one has ever become poor from giving</h1>
+            <h1 class="donation__title">"No one has ever become poor from giving"</h1>
             <div class="donation__img">
                 <h1 class="donation__h1">You can make <br />a difference</h1>
             </div>
@@ -73,8 +75,8 @@
                         <input type="radio" name="value">
                         <label for="1000$">1,000$</label>
                         <br>
-                            <input class="otherAmount" type="text" placeholder="Input any other amount">
-                            <p class="form__minimum">$10 is the minimum amount you can give</p>
+                        <input name="value" class="otherAmount" type="text" placeholder="Input any other amount">
+                        <p class="form__minimum">$10 is the minimum amount you can give</p>
                     </form>
                 </div>
                 <div class="support">
@@ -92,10 +94,81 @@
             <div class="payments">
                 <h1 class="payment__title">Payment method</h1>
                 <div class="payments__methods">
-                        <img src="https://www.debt.com/wp-content/uploads/2014/05/Credit-Card-Visa-Master-Card.jpg" class="payment">
-                        <p class="payment__text">Pay Via Credit Card</p>
+                        <button class="paypal__payment" onclick="payment()">
+                            <img src="https://www.debt.com/wp-content/uploads/2014/05/Credit-Card-Visa-Master-Card.jpg" class="payment">
+                        </button>
+                        <span class="payment__text">Pay Via Credit Card</span>
+                    <a target="_blank" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Fsummary&state=%3Fintl%3D0">
                         <img src="https://abc-corfu.com/img/paypal.png" class="payment">
-                        <p class="payment__text">Pay Via Paypal</p>
+                    </a>
+                        <span class="payment__text">Pay Via Paypal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="payment">
+        <div class="creditCard">
+            <h1>Pay Via Credit Card</h1>
+            <div class="information">
+                <h1 style="margin: 20px 0;">Your Information</h1>
+                <div>
+                    <form class="personal__form">
+                        <div class="personal__wrap">
+                            <label class="personal__label">First name</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">Last name</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">Email Address</label>
+                            <input type="email" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">Phone Number <span style="font-size:smaller;color:gray;">(Optional)*</span></label>
+                            <input type="number" class="personal__input" placeholder="555-555-5555">
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">Address</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">Address Line 2</label>
+                            <input type="text" class="personal__input">
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">City</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap2">
+                            <label class="personal__label">State</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap2">
+                            <label class="personal__label">Postal Code</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap">
+                            <label class="personal__label">Card Number</label>
+                            <input type="text" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap3">
+                            <label class="personal__label">Month</label>
+                            <input type="number" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap3">
+                            <label class="personal__label">Year</label>
+                            <input type="number" class="personal__input" required>
+                        </div>
+                        <div class="personal__wrap3">
+                            <label class="personal__label">CVV</label>
+                            <input type="number" class="personal__input" required>
+                        </div>
+                        <div class="submit__wrapper">
+                            <input type="submit" class="submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

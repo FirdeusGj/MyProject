@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* NAV */
 .nav__wrapper{
@@ -23,8 +24,6 @@
 }
 #nav{
     height:100px;
-    background-color: #FFF7C4;
-    border-bottom: black 5px solid;
 }
 .logo{
     height:90px;
@@ -32,7 +31,7 @@
 }
 /* BACKGROUND */
 .background__img{
-    background-image:linear-gradient(to top, #ffffff, transparent,transparent,transparent,transparent), url('/pngs/donate.png');
+    background-image:linear-gradient(to top, #ffffff, transparent,transparent,transparent,transparent,#fff), url('./pngs/donate.png');
     background-size: cover;
     width:100%;
     height:700px;
@@ -72,7 +71,7 @@
 }
 /* TITLE */
 .donation__img{
-    background-image: url('/pngs/donation.png');
+    background-image: url('./pngs/donation.png');
     height: 550px;
     width:100%;
     background-size: cover;
@@ -94,7 +93,7 @@
     margin:0;
 }
 .donation__title{
-    font-size: 60px;
+    font-size: 57px;
     text-align: center;
     margin: 40px 0;
     text-shadow: 0 0 10px rgb(151, 151, 151);
@@ -154,6 +153,7 @@
     font-weight: 700;
     box-shadow: 0 0 5px rgb(224, 224, 224);
     border: 2px solid rgb(224, 224, 224);
+    cursor:pointer;
 }
 option{
     font-size: 20px;
@@ -186,8 +186,78 @@ option{
 }
 .payment__text{
     opacity: 0;
+    transform:translateY(-100%);
+    transition: .2s all ease-in-out;
+    color:#878787;
+    text-shadow: 0 0 5px rgb(210, 210, 210);
 }
 .payments__methods:hover .payment__text{
     opacity:1;
+    transform: translateY(1%);
     visibility: visible;
+}
+.paypal__payment{
+    background: none;
+    border:none;
+}
+#payment{
+    display:none;
+}
+.creditCard{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    margin:0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    padding:50px;
+    margin-top:10px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.information{
+    width:80%;
+}
+.personal__form{
+    flex-wrap: wrap;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.personal__label{
+    display:block;
+    font-size:20px;
+    margin:5px 0;
+}
+.personal__input{
+    width:100%;
+    font-size: 20px;
+    padding:5px 5px;
+}
+.personal__wrap{
+    width:49%;
+}
+.personal__wrap2{
+    width:24%;
+}
+.personal__wrap3{
+    width:15%;
+}
+.submit{
+    width:200px;
+    font-size: 30px;
+    margin-top:20px;
+    padding:10px;
+    background-color: rgb(101, 174, 252);
+    border:none;
+    border-radius: 10px;
+    color:white;
+    text-shadow: 0 0 10px rgb(190, 222, 255);
+}
+.submit__wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width:100%;
 }
