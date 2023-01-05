@@ -254,10 +254,70 @@ option{
     border-radius: 10px;
     color:white;
     text-shadow: 0 0 10px rgb(190, 222, 255);
+    cursor:pointer;
 }
 .submit__wrapper{
     align-items: center;
     display: flex;
     justify-content: center;
     width:100%;
+}
+
+@media (max-width:768px){
+.main__button{
+    font-size:30px;
+}
+.donation__title{
+    font-size:35px;
+}
+.payment{
+    width:200px;
+}
+.personal__wrap{
+    width:100%;
+}
+.personal__wrap2{
+    width:calc(100%/2.1)
+}
+.personal__wrap3{
+    width:calc(100%/3.3)
+}
+}
+@media (max-width:500px){
+    .main__button{
+        font-size:20px;
+    }
+    .donation__title{
+        font-size:25px;
+    }
+    .donation__h1{
+        font-size:40px;
+    }
+    .donate__wrapper{
+        flex-direction: column;
+        display:flex;
+    }
+    .donates{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .monthly{
+        display: block;
+    }
+    .payment{
+        width:200px;
+    }
+    .personal__wrap{
+        width:100%;
+    }
+    .personal__wrap2{
+        width:calc(100%/2.1)
+    }
+    .personal__wrap3{
+        width:calc(100%/3.3)
+    }
 }
