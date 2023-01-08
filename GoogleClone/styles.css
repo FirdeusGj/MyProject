@@ -3,14 +3,35 @@
     padding:0;
     box-sizing: border-box;
 }
+.svg{
+    height:24px;
+    float:left;
+    margin-right:10px;
+    margin-left:-5px;
+}
 svg{
-    height:20px;
+    height:30px;
+    margin:0;
+}
+.search-icon{
+    height:17px;
+}
+img:hover{
+    cursor:pointer;
+}
+.options{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height:25px;
 }
 li{
     list-style-type: none;
 }
 a{
     text-decoration: none;
+    color:black;
 }
 body{
     font-family: sans-serif;
@@ -51,6 +72,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    cursor:pointer;
 }
 .circle-shadow:hover{
     background-color: rgba(0,0,0,0.1);
